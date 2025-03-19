@@ -50,7 +50,7 @@ const {onSent,recentPrompt,showResult,loading,resultData,setInput,input}= useCon
                 <img src={assets.send_icon} alt="" />
             </div>
           </div>
-          <p className="bottom-info">Gemini May Display Innucrate Info, Includin About People, So Double-Check Its Responses</p>
+          <p className="bottom-info">Gemini May Display Innucrate Info, Includin About People, So Double-Check Its</p>
         </div>
       </div>
     </div>
