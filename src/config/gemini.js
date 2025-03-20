@@ -4,8 +4,8 @@ import {
   HarmBlockThreshold,
 } from "@google/generative-ai";
 
-const apiKey = process.env.GEMINI_API_KEY;
-const genAI = new GoogleGenerativeAI(AIzaSyAfvozusgEuY0LrvEcLH - PFOs7Fvmi4P4E);
+// const apiKey = process.env.GEMINI_API_KEY;
+const genAI = new GoogleGenerativeAI("AIzaSyAfvozusgEuY0LrvEcLH - PFOs7Fvmi4P4E");
 
 const model = genAI.getGenerativeModel({
   model: "gemini-2.0-flash",
@@ -19,7 +19,7 @@ const generationConfig = {
   responseMimeType: "text/plain",
 };
 
-async function run(prompt) {
+async function runChat(prompt) {
   const chatSession = model.startChat({
     generationConfig,
     history: [],
