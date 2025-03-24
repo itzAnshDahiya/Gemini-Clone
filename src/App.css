@@ -1,34 +1,31 @@
-/* Root container with better max-width and margin */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #f4f6f9;  /* Softer background color */
-  color: #333; /* Improved text color for readability */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Modern font */
+  background-color: #f4f6f9;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Logo styling with better hover effect */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms ease, transform 500ms ease-in-out; /* Added smooth transition for transform */
-  filter: drop-shadow(0 0 1em rgba(0, 123, 255, 0.7)); 
+  transition: filter 300ms ease, transform 500ms ease-in-out;
+  filter: drop-shadow(0 0 1em rgba(0, 123, 255, 0.7));
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #fd7e14);  /* Bright orange hover effect */
-  transform: scale(1.1);  /* Slight zoom effect on hover */
+  filter: drop-shadow(0 0 2em #fd7e14);
+  transform: scale(1.1);
 }
 
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #198754); /* Green hover effect for react */
-  transform: scale(1.1);  /* Keep the zoom effect */
+  filter: drop-shadow(0 0 2em #198754);
+  transform: scale(1.1);
 }
 
-/* Spin animation for logo with more fluid movement */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,48 +35,43 @@
   }
 }
 
-/* Animation based on system preference for reduced motion */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
-/* Card container with smoother rounded corners and subtle shadow */
 .card {
   padding: 2em;
   background-color: #ffffff;
-  border-radius: 12px; /* Slightly larger radius for smoother corners */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a soft floating effect */
-  transition: box-shadow 300ms ease; /* Smooth transition for shadow on hover */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 300ms ease;
 }
 
-/* Add hover effect to card to lift it slightly */
 .card:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  transform: translateY(-5px); /* Lift effect on hover */
+  transform: translateY(-5px);
 }
 
-/* Styling for the read-the-docs link with better hover state */
 .read-the-docs {
   color: #6c757d;
   font-style: italic;
-  transition: color 300ms ease, transform 200ms ease;  /* Added transition for transform */
+  transition: color 300ms ease, transform 200ms ease;
 }
 
 .read-the-docs:hover {
-  color: #0d6efd; /* Change text color to blue */
-  transform: translateY(-2px); /* Slight lift effect on hover */
+  color: #0d6efd;
+  transform: translateY(-2px);
 }
 
-/* Responsive media query for mobile devices */
 @media (max-width: 768px) {
   .logo {
-    height: 4em; /* Make logo smaller on mobile */
-    padding: 1rem; /* Adjust padding */
+    height: 4em;
+    padding: 1rem;
   }
 
   .card {
-    padding: 1.5em; /* Adjust card padding on smaller screens */
+    padding: 1.5em;
   }
 }
