@@ -45,12 +45,17 @@ const {onSent,recentPrompt,showResult,loading,resultData,setInput,input}= useCon
           <div className="search-box">
             <input type="text" placeholder="Enter a Prompt" />
             <div>
-                <img src={assets.gallery_icon }alt="" />
-                <img src={assets.mic_icon} alt="" />
+              <img src={assets.gallery_icon} alt="" />
+              <img src={assets.mic_icon} alt="" />
+              <button className="search-button">
                 <img src={assets.send_icon} alt="" />
+              </button>
             </div>
           </div>
-          <p className="bottom-info">Gemini May Display Innucrate Info, Includin About People, So Double-Check Its</p>
+          <p className="bottom-info">
+            Gemini May Display Innucrate Info, Includin About People, So
+            Double-Check Its
+          </p>
         </div>
       </div>
     </div>
