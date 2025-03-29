@@ -22,13 +22,15 @@
 
 .main-container {
     max-width: 900px;
+    margin: 10px;
     margin: auto;
+
 }
 
 .main .greet {
     margin: 50px 0px;
     font-size: 56px;
-    color: #2d3748; 
+    color: #2d3749; 
     font-weight: 500;
     padding: 20px;
 }
@@ -72,7 +74,7 @@
 }
 
 .main .card:hover {
-    background-color: #aec9ec; 
+    background-color: #aec9ed; 
 }
 
 .main-bottom {
@@ -89,7 +91,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: #c9d7e8; 
+    background-color: #c9d7e4; 
     padding: 10px 20px;
     border-radius: 50px;
 }
