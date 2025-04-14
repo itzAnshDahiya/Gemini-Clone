@@ -61,18 +61,18 @@ const Main = () => {
             />
             <div>
               <img src={assets.gallery_icon} alt="Gallery icon" />
-              <img src={assets.mic_icon} alt="Mic icon" />
-              <img
-                src={assets.send_icon}
-                alt="Send icon"
-                onClick={onSent}
-                style={{ cursor: "pointer" }}
-              />
+              <button className="mic-button">
+                <img src={assets.mic_icon} alt="Mic icon" />
+              </button>
+              <button className="search-button" onClick={onSent}>
+                <img src={assets.send_icon} alt="Send icon" />
+              </button>
             </div>
           </div>
 
           <p className="bottom-info">
-            Gemini may display inaccurate info, including about people, so double-check its results.
+            Gemini may display inaccurate info, including about people, so
+            double-check its results.
           </p>
         </div>
       </div>
